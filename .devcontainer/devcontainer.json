@@ -2,7 +2,7 @@
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/ubuntu
 {
 	"name": "weblatex",
-	"image": "sanjibsen/weblatex:latest", // https://github.com/sanjib-sen/weblatex-docker
+	"build": { "dockerfile": "Dockerfile" },
 	"remoteUser": "root", // Do not change this
 	"features": {},
 	"customizations": {
@@ -53,9 +53,8 @@
 				"latex-workshop.latex.autoBuild.run": "never",
 				// "latex-workshop.view.pdf.color.dark.pageColorsForeground": "#FFFFFF", // For Dark Viewer
 				// "latex-workshop.view.pdf.color.dark.backgroundColor": "#171717", // For Dark Viewer
-				"editor.formatOnSave": true,
 				"latex-workshop.latex.pdfWatch.delay": 500,
- 				//"latex-workshop.latex.watch.delay": 500, // Deprecated. See here: https://github.com/sanjib-sen/WebLaTex/issues/8
+				//"latex-workshop.latex.watch.delay": 500, // Deprecated. See here: https://github.com/sanjib-sen/WebLaTex/issues/8
 				"latex-workshop.codespaces.portforwarding.openDelay": 20000,
 				"grammarly.files.include": [
 					"**/*.tex"
